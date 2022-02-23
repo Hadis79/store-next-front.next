@@ -1,0 +1,22 @@
+/* addressbar */
+
+.addressbar {
+    display: flex;
+    background-color: var(--light-begie);
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2% 12%;
+}
+
+.addressbar .title {
+    font-size: 16px;
+}
+
+.addressbar a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+
+/* end addressbar */

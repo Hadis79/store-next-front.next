@@ -1,0 +1,83 @@
+.productsContainerGrid {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.productsContainerGrid h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: 'Lora', sans-serif;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10%;
+    text-align: center;
+    width: 100%;
+    padding: 2% 8%;
+}
+
+.column {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(138, 138, 138, 0.425);
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.column img {
+    max-width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mask {
+    display: none;
+}
+
+.column:hover .mask {
+    position: absolute;
+    display: block;
+    top: 42%;
+    left: 32%;
+    border: 1px solid rgba(202, 200, 200, 0.658);
+    padding: 3px;
+    background-color: rgba(202, 200, 200, 0.658);
+}
+
+.mask a {
+    text-decoration: none;
+    color: #000;
+}
+
+.titleProduct {
+    padding: 20px;
+}
+
+.column .price {
+    color: #333;
+}
+
+@media screen and (max-width: 980px) {
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .productsGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .column {
+        margin-top: 5px;
+    }
+}

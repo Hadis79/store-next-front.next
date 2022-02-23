@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+}
+
+.pagination .pageNum,
+.arrowPagination {
+    border: 1px solid #816263;
+    border-radius: 50%;
+    padding: 8px 14px;
+    cursor: pointer;
+    margin: 0px 2px;
+}
+
+.pagination .pageNum.active {
+    background-color: #816263;
+    color: aliceblue;
+}
